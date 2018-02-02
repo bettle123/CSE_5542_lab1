@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{a5993cad-54d0-45c6-9a1d-08d4a6fb2621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{1418a73e-eedc-451f-b2ee-e2cfd6d4bb4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL">
+      <UniqueIdentifier>{3104d42c-271c-42ed-b81c-e7710777fcfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\ConcreteStates">
+      <UniqueIdentifier>{8947e2a6-c348-4d29-b919-7835793f25a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\ConcreteVisitors">
+      <UniqueIdentifier>{abae3b78-a893-4587-be69-7bd860ab593c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\ConcreteTransforms">
+      <UniqueIdentifier>{72c0c06a-0f68-498d-8965-a0ddf11ea163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\ConcreteShaders">
+      <UniqueIdentifier>{f2d9b843-3b1c-4f3a-8993-6d8dde052b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\ConcreteMaterials">
+      <UniqueIdentifier>{4003ed3b-242c-4dd6-ac6b-8a40f080fea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\ConcreteDrawables">
+      <UniqueIdentifier>{16f09a9e-f79d-45cf-bad0-95ac39c5e8da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\ConcreteLights">
+      <UniqueIdentifier>{c2cb9178-da9e-4379-a772-66a2d2a5dcf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\ConcreteTextures">
+      <UniqueIdentifier>{22b7cbd2-7ea1-4422-a1ab-3c6fcb13acf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\Commands">
+      <UniqueIdentifier>{3214618f-3a61-481b-9641-4ea36444dc0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Controllers">
+      <UniqueIdentifier>{552feadc-d031-4dae-9819-ff4ba2dfe1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\XMLReaders">
+      <UniqueIdentifier>{0538c47a-6ba0-4168-9664-498960406bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Commands">
+      <UniqueIdentifier>{ef247d50-45bb-4e3b-a40e-27c851a106f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Ticpp">
+      <UniqueIdentifier>{6dab8877-d9f4-462e-9dc8-6fba5a8875e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media">
+      <UniqueIdentifier>{320bf481-70e7-407d-bcf3-ed9133051bc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media\GLSL Shaders">
+      <UniqueIdentifier>{d4903832-b036-4073-aa8c-8f6860117c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media\Scenes">
+      <UniqueIdentifier>{0604b3d1-52c7-4a18-93ed-29c0a36a4ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media\Materials">
+      <UniqueIdentifier>{353b25b2-220f-425d-9d7c-9e1a1ee13b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media\Models">
+      <UniqueIdentifier>{2cab68ee-9fee-4a7e-ad66-44200f6d297e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Color.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MathFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TexParam2DNoMipMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TexParamMipMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ticpp.cpp">
+      <Filter>Ticpp</Filter>
+    </ClCompile>
+    <ClCompile Include="tinystr.cpp">
+      <Filter>Ticpp</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>Ticpp</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>Ticpp</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>Ticpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NullCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureBindManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderConstantMatrix4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupNode.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IDepthBuffer.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawable.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawableNode.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ILight.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IMaterial.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IRasterOps.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderTarget.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ISceneNode.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IShaderConstant.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IShaderProgram.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IShaderRoutine.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IStateNode.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextureApplicator.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextureBindManager.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextureDataObject.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextureParameters.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ITransformNode.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IVisitor.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderState.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureBinding.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureParameterList.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultController.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DevIL.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawModeController.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawModeNode.h">
+      <Filter>Header Files\OpenGL\ConcreteStates</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSetNode.h">
+      <Filter>Header Files\OpenGL\ConcreteStates</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialProxy.h">
+      <Filter>Header Files\OpenGL\ConcreteStates</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>Header Files\OpenGL\ConcreteStates</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>Header Files\OpenGL\ConcreteStates</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTargetProxy.h">
+      <Filter>Header Files\OpenGL\ConcreteStates</Filter>
+    </ClInclude>
+    <ClInclude Include="StateNodeBase.h">
+      <Filter>Header Files\OpenGL\ConcreteStates</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugRenderVisitor.h">
+      <Filter>Header Files\OpenGL\ConcreteVisitors</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintSceneVisitor.h">
+      <Filter>Header Files\OpenGL\ConcreteVisitors</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderBoundingBoxVisitor.h">
+      <Filter>Header Files\OpenGL\ConcreteVisitors</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderVisitor.h">
+      <Filter>Header Files\OpenGL\ConcreteVisitors</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchVisitor.h">
+      <Filter>Header Files\OpenGL\ConcreteVisitors</Filter>
+    </ClInclude>
+    <ClInclude Include="ExaminerCameraNode.h">
+      <Filter>Header Files\OpenGL\ConcreteTransforms</Filter>
+    </ClInclude>
+    <ClInclude Include="FrustumTransform.h">
+      <Filter>Header Files\OpenGL\ConcreteTransforms</Filter>
+    </ClInclude>
+    <ClInclude Include="LookAtTransform.h">
+      <Filter>Header Files\OpenGL\ConcreteTransforms</Filter>
+    </ClInclude>
+    <ClInclude Include="PerspectiveTransform.h">
+      <Filter>Header Files\OpenGL\ConcreteTransforms</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetModelViewNode.h">
+      <Filter>Header Files\OpenGL\ConcreteTransforms</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetProjectionNode.h">
+      <Filter>Header Files\OpenGL\ConcreteTransforms</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformMatrixNode.h">
+      <Filter>Header Files\OpenGL\ConcreteTransforms</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformNodeBase.h">
+      <Filter>Header Files\OpenGL\ConcreteTransforms</Filter>
+    </ClInclude>
+    <ClInclude Include="FragmentRoutine.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryRoutine.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="SamplerApplicator.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderConstantCollection.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderConstantVec4.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderProgram.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexRoutine.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthTestedRasterOps.h">
+      <Filter>Header Files\OpenGL\ConcreteMaterials</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>Header Files\OpenGL\ConcreteMaterials</Filter>
+    </ClInclude>
+    <ClInclude Include="NoDepthRasterOps.h">
+      <Filter>Header Files\OpenGL\ConcreteMaterials</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadedMaterial.h">
+      <Filter>Header Files\OpenGL\ConcreteMaterials</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleShaderMaterial.h">
+      <Filter>Header Files\OpenGL\ConcreteMaterials</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidColorMaterial.h">
+      <Filter>Header Files\OpenGL\ConcreteMaterials</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableCube.h">
+      <Filter>Header Files\OpenGL\ConcreteDrawables</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableFloor.h">
+      <Filter>Header Files\OpenGL\ConcreteDrawables</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableProxy.h">
+      <Filter>Header Files\OpenGL\ConcreteDrawables</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableRenderState.h">
+      <Filter>Header Files\OpenGL\ConcreteDrawables</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableSphere.h">
+      <Filter>Header Files\OpenGL\ConcreteDrawables</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableSquare.h">
+      <Filter>Header Files\OpenGL\ConcreteDrawables</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableTeapot.h">
+      <Filter>Header Files\OpenGL\ConcreteDrawables</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Header Files\OpenGL\ConcreteDrawables</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>Header Files\OpenGL\ConcreteLights</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Header Files\OpenGL\ConcreteLights</Filter>
+    </ClInclude>
+    <ClInclude Include="BlankTexture2D.h">
+      <Filter>Header Files\OpenGL\ConcreteTextures</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthBuffer.h">
+      <Filter>Header Files\OpenGL\ConcreteTextures</Filter>
+    </ClInclude>
+    <ClInclude Include="TexParam2DMipMap.h">
+      <Filter>Header Files\OpenGL\ConcreteTextures</Filter>
+    </ClInclude>
+    <ClInclude Include="TexParam2DNoMipMap.h">
+      <Filter>Header Files\OpenGL\ConcreteTextures</Filter>
+    </ClInclude>
+    <ClInclude Include="TexParam2DWrapped.h">
+      <Filter>Header Files\OpenGL\ConcreteTextures</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureBindManagerOpenGL.h">
+      <Filter>Header Files\OpenGL\ConcreteTextures</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureData2DBase.h">
+      <Filter>Header Files\OpenGL\ConcreteTextures</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureData2DBuilder.h">
+      <Filter>Header Files\OpenGL\ConcreteTextures</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureDataImage.h">
+      <Filter>Header Files\OpenGL\ConcreteTextures</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearColorCommand.h">
+      <Filter>Header Files\OpenGL\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearDepthCommand.h">
+      <Filter>Header Files\OpenGL\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearFrameCommand.h">
+      <Filter>Header Files\OpenGL\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="SwapCommand.h">
+      <Filter>Header Files\OpenGL\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="IKeyboardHandler.h">
+      <Filter>Header Files\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="IMouseHandler.h">
+      <Filter>Header Files\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="Trackball.h">
+      <Filter>Header Files\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialFactory.h">
+      <Filter>Header Files\XMLReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="MathFactory.h">
+      <Filter>Header Files\XMLReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneNodeFactory.h">
+      <Filter>Header Files\XMLReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformFactory.h">
+      <Filter>Header Files\XMLReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ICommand.h">
+      <Filter>Header Files\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="ticpp.h">
+      <Filter>Ticpp</Filter>
+    </ClInclude>
+    <ClInclude Include="ticpprc.h">
+      <Filter>Ticpp</Filter>
+    </ClInclude>
+    <ClInclude Include="TiCppRCImp.h">
+      <Filter>Ticpp</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>Ticpp</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>Ticpp</Filter>
+    </ClInclude>
+    <ClInclude Include="LightManager.h">
+      <Filter>Header Files\OpenGL\ConcreteLights</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixStack.h">
+      <Filter>Header Files\OpenGL\ConcreteTransforms</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderConstantMatrix4.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderConstantModelView.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderConstantModelViewProj.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderConstantNormalMatrix.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderConstantProjection.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderProgramWithMatrices.h">
+      <Filter>Header Files\OpenGL\ConcreteShaders</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Media\Shaders\DirectionalLight.vert">
+      <Filter>Media\GLSL Shaders</Filter>
+    </None>
+    <None Include="..\Media\Shaders\HemisphereLighting.vert">
+      <Filter>Media\GLSL Shaders</Filter>
+    </None>
+    <None Include="..\Media\Shaders\InterpolatedColor.frag">
+      <Filter>Media\GLSL Shaders</Filter>
+    </None>
+    <None Include="..\Media\Shaders\LightingPerFragment.frag">
+      <Filter>Media\GLSL Shaders</Filter>
+    </None>
+    <None Include="..\Media\Shaders\NormalPosition.vert">
+      <Filter>Media\GLSL Shaders</Filter>
+    </None>
+    <None Include="..\Media\Shaders\PointLight.vert">
+      <Filter>Media\GLSL Shaders</Filter>
+    </None>
+    <None Include="..\Media\Shaders\SolidColor.frag">
+      <Filter>Media\GLSL Shaders</Filter>
+    </None>
+    <None Include="..\Media\Shaders\SolidColor.vert">
+      <Filter>Media\GLSL Shaders</Filter>
+    </None>
+    <None Include="..\Media\Shaders\VertexLight.vert">
+      <Filter>Media\GLSL Shaders</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Media\2DPaint.xml">
+      <Filter>Media\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\Media\TeaPotTrophy.xml">
+      <Filter>Media\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\Media\TestScene.xml">
+      <Filter>Media\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\Media\BasicMaterials.xml">
+      <Filter>Media\Materials</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

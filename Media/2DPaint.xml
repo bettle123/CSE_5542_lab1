@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene>
+  <StateNode name="Lights">
+    <LightSet>
+      <PointLight>
+        <Position x="-4" y="-0.95" z="0"></Position>
+        <Color r="1" g="1" b="1" a="1"></Color>
+      </PointLight>
+      <DirectionalLight>
+        <Direction x="1" y="2" z="3"></Direction>
+        <Color r="1" g="1" b="1" a="1"></Color>
+      </DirectionalLight>
+      <Child>
+        <GroupNode name="Main Scene">
+
+          <TransformNode name="OrthoModelView">
+            <ResetModelView>
+              <Child>
+                <TransformNode name="OrthoProjection">
+                  <ResetProjection>
+                    <Child>
+                      <GroupNode name="BackgroundAndPaint">
+                        <TransformNode name ="Background Transform">
+                          <TransformMatrixNode>
+                            <Translate x="0" y="0.0" z="0.1"></Translate>
+                            <Child>
+                              <StateNode>
+                                <MaterialProxy material="GradientWash">
+                                  <Child>
+                                    <DrawNode>
+                                      <DrawableProxy model="Background"></DrawableProxy>
+                                    </DrawNode>
+                                  </Child>
+                                </MaterialProxy>
+                              </StateNode>
+                            </Child>
+                          </TransformMatrixNode>
+                        </TransformNode>
+                        <StateNode name="DiffuseFBO">
+                          <RenderTargetProxy renderTarget="PaintFBO">
+                            <Child>
+                              <TransformNode name ="Brush Transform">
+                                <TransformMatrixNode>
+                                  <Translate x="0" y="0.0" z="0.1"></Translate>
+                                  <Scale x="0.8" y="0.8" z="1.0"></Scale>
+                                  <Child>
+                                    <StateNode>
+                                      <MaterialProxy material="GradientWash">
+                                        <Child>
+                                          <DrawNode>
+                                            <DrawableProxy model="Brush"></DrawableProxy>
+                                          </DrawNode>
+                                        </Child>
+                                      </MaterialProxy>
+                                    </StateNode>
+                                  </Child>
+                                </TransformMatrixNode>
+                              </TransformNode>
+                            </Child>
+                          </RenderTargetProxy>
+                        </StateNode>
+                      </GroupNode>
+                    </Child>
+                  </ResetProjection>
+                </TransformNode>
+              </Child>
+            </ResetModelView>
+          </TransformNode>
+
+          <StateNode name="Gold Material">
+            <MaterialProxy material="Textured">
+              <Child>
+                <TransformNode name ="Trophy Transform">
+                  <TransformMatrixNode>
+                    <Translate x="0" y="1.5" z="0"></Translate>
+                    <Child>
+                      <DrawNode name="Trophy" >
+                        <DrawableProxy model="Teapot"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+
+          <StateNode name="White Material">
+            <MaterialProxy material="Silver">
+              <Child>
+                <TransformNode name ="Cube Transform">
+                  <TransformMatrixNode>
+                    <Scale x="0.5" y="1.5" z="0.8"></Scale>
+                    <Translate x="0" y="0.0" z="0"></Translate>
+                    <Child>
+                      <DrawNode name="White Cube">
+                        <DrawableProxy model="Cube"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+
+          <StateNode name="Emerald Material">
+            <MaterialProxy material="Emerald">
+              <Child>
+                <TransformNode name ="Floor Transform">
+                  <TransformMatrixNode>
+                    <Scale x="8" y="1" z="7"></Scale>
+                    <Translate x="0" y="-0.5" z="0"></Translate>
+                    <Child>
+                      <DrawNode name="Base Floor">
+                        <DrawableProxy model="Floor"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+
+        </GroupNode>
+      </Child>
+    </LightSet>
+  </StateNode>
+</scene>
+

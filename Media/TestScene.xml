@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene>
+  <TransformNode name="Perspective">
+    <Perspective>
+      <Child>
+        <TransformNode name="Dolly">
+          <TransformMatrixNode>
+            <Child>
+              <TransformNode name="PostTranslate">
+                <TransformMatrixNode>
+                  <Translate x="0" y="0" z="-10"></Translate>
+                  <Child>
+                    <TransformNode name ="Examiner">
+                      <TransformMatrixNode>
+                        <Child>
+                          <TransformNode name ="PreTranslate">
+                            <TransformMatrixNode>
+                              <Translate x="0" y="0" z="10"></Translate>
+                              <Child>
+                                <GroupNode name="Group1">
+                                  <TransformNode name="Camera">
+                                    <LookAt>
+                                      <EyePoint x="10" y="0" z="0"></EyePoint>
+                                      <COI x="0" y="0" z="0"></COI>
+                                      <ViewUp x="0" y="1" z="0"></ViewUp>
+                                      <Child>
+                                        <StateNode name="Lights">
+                                          <LightSet>
+                                            <PointLight>
+                                              <Position x="-4" y="-0.95" z="0"></Position>
+                                              <Color r="1" g="1" b="1" a="1"></Color>
+                                            </PointLight>
+                                            <DirectionalLight>
+                                              <Direction x="1" y="2" z="3"></Direction>
+                                              <Color r="1" g="1" b="1" a="1"></Color>
+                                            </DirectionalLight>
+                                            <Child>
+                                              
+                                              <StateNode name="Draw Style">
+                                                <DrawMode mode="Wireframe">
+                                                  <Child>
+                                                    <GroupNode name="Main Scene">
+
+                                                      <StateNode name="Gold Material">
+                                                        <MaterialProxy material="Textured">
+                                                          <Child>
+                                                            <TransformNode name ="Sphere Transform">
+                                                              <TransformMatrixNode>
+                                                                <Translate x="0" y="1.5" z="0"></Translate>
+                                                                <Child>
+                                                                  <DrawNode name="Sphere1" >
+                                                                    <DrawableProxy model="Teapot"></DrawableProxy>
+                                                                  </DrawNode>
+                                                                </Child>
+                                                              </TransformMatrixNode>
+                                                            </TransformNode>
+                                                          </Child>
+                                                        </MaterialProxy>
+                                                      </StateNode>
+
+                                                      <StateNode name="White Material">
+                                                        <MaterialProxy material="Silver">
+                                                          <Child>
+                                                            <TransformNode name ="Cube Transform">
+                                                              <TransformMatrixNode>
+                                                                <Scale x="0.5" y="1.5" z="0.8"></Scale>
+                                                                <Translate x="0" y="0.0" z="0"></Translate>
+                                                                <Child>
+                                                                  <DrawNode name="White Cube">
+                                                                    <DrawableProxy model="Cube"></DrawableProxy>
+                                                                  </DrawNode>
+                                                                </Child>
+                                                              </TransformMatrixNode>
+                                                            </TransformNode>
+                                                          </Child>
+                                                        </MaterialProxy>
+                                                      </StateNode>
+
+                                                      <StateNode name="Emerald Material">
+                                                        <MaterialProxy material="Emerald">
+                                                          <Child>
+                                                            <TransformNode name ="Floor Transform">
+                                                              <TransformMatrixNode>
+                                                                <Scale x="8" y="1" z="7"></Scale>
+                                                                <Translate x="0" y="-0.5" z="0"></Translate>
+                                                                <Child>
+                                                                  <DrawNode name="Base Floor">
+                                                                    <DrawableProxy model="Floor"></DrawableProxy>
+                                                                  </DrawNode>
+                                                                </Child>
+                                                              </TransformMatrixNode>
+                                                            </TransformNode>
+                                                          </Child>
+                                                        </MaterialProxy>
+                                                      </StateNode>
+
+                                                    </GroupNode>
+                                                  </Child>
+                                                </DrawMode>
+                                              </StateNode>
+                                            </Child>
+                                          </LightSet>
+                                        </StateNode>
+                                      </Child>
+                                    </LookAt>      
+                                  </TransformNode>
+                                </GroupNode>
+                              </Child>
+                            </TransformMatrixNode>
+                          </TransformNode>
+                        </Child>
+                      </TransformMatrixNode>
+                    </TransformNode>
+                  </Child>
+                </TransformMatrixNode>
+              </TransformNode>
+            </Child>
+          </TransformMatrixNode>
+        </TransformNode>
+      </Child>
+    </Perspective>
+  </TransformNode>
+</scene>
